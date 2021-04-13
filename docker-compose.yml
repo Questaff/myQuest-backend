@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  db:
+    image: postgres:11.2
+    volumes:
+      - './tmp/db:/var/lib/postgresql/data'
+  web:
+    build: .
+    volumes:
+      - '.:/app'
+      - '/app/tmp/pids/'
+    ports:
+      - '3000:3000'
+    command: '/app/web_entry.sh'
+    stdin_open: true
+    tty: true
+    depends_on:
+      - db
