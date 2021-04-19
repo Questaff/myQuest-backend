@@ -27,6 +27,7 @@ If you do not want to use docker, you can still use a regular installation of ra
   
 # Project
 URL : `localhost:3000`.
+PgAdmin : `localhost:8080`.
 
 Run the project with `docker-compose up` will start every containers.
 
@@ -38,8 +39,8 @@ Since the project is powered by docker compose, you'll run command into containe
 
 For more informations about containers you should take a look to `docker-compose.yml`.
 
-You can change the port of containers if they are already in use on your system. Open `docker-compose.yml`, find `ports` definition and change : `<the_port_you_want>:3000`. Then you can access them from your computer throught the port you chose.
-/!\ do not put these changes please /!\
+You can change the port of containers if they are already in use on your system. Open `docker-compose.yml`, find `ports` definition and change for example : `<the_port_you_want>:3000`. Then you can access them from your computer throught the port you chose.
+/!\ do not push these changes in a commit please /!\
 
 ## Options
 You can add the following options after `docker-compose up` :
