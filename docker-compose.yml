@@ -1,9 +1,5 @@
 version: '3.7'
 services:
-  db:
-    image: postgres:11.2
-    volumes:
-      - './tmp/db:/var/lib/postgresql/data'
   web:
     build: .
     volumes:
@@ -16,3 +12,30 @@ services:
     tty: true
     depends_on:
       - db
+  db:
+    image: postgres:13.2
+    restart: always
+    environment:
+      POSTGRES_USER: ${MYQUEST_DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${MYQUEST_DATABASE_PASSWORD}
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      - db-data:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4:5.1
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
+      PGADMIN_LISTEN_PORT: 80
+    # logging:
+    #   driver: "none"
+    ports:
+      - "8080:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    links:
+      - "db:pgsql-server"
+volumes:
+  db-data:
+  pgadmin-data:
