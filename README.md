@@ -1,6 +1,8 @@
 # myQuest Backend
 This is the Ruby on Rails API backend of myQuest !
 
+![](https://cdn.discordapp.com/attachments/584465372489449608/833542286419689472/Webp.net-resizeimage_4.png) [Find us on discord](https://discord.gg/uh6FudeY9Q)
+
 # Installation
 
 ## Prerecquisites
