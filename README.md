@@ -82,6 +82,6 @@ If you get a database error, verify on wich environment you are by setting the c
 This project was bootstrapped with [Ruby on Rails](https://rubyonrails.org/) and powered by [Docker](https://www.docker.com/) and Docker compose.
 
 - Ruby (ruby 3.0.0) running on buster
-- Rails 6.1.3.1, default port : 3000
+- Rails 6.1.3.2, default port : 3000
 - Postgres (13.2) Port : 5432
 - PgAdmin 5.1
