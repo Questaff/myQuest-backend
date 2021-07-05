@@ -1,0 +1,25 @@
+fr:
+  hello: "Wesh la street"
+  validation:
+    user:
+      full-name:
+        format: "n'est pas un nom complet valide"
+      nickname: 
+        format: "ne peut contenir que des lettres, chiffres ainsi que les caractères spéciaux '-' et '_'"
+      password:
+        format-uppercase: "doit contenir au moins une lettre majuscule"
+        format-lowercase: "doit contenir au moins une lettre minuscule"
+        format-symbol: "doit contenir au moins un caractère spécial"
+        format-number: "doit contenir au moins un chiffre"
+  activerecord:
+    models:
+      user: "Utilisateur"
+    attributes:
+      user:
+        name: "Nom complet"
+        nickname: "Pseudonyme"
+        email: "Adresse email"
+        password: "Mot de passe"
+        password_confirmation: "Confirmation du mot de passe"
+        phone_number: "Numéro de téléphone"
+    

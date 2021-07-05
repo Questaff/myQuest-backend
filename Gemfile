@@ -7,10 +7,18 @@ ruby '3.0.0'
 gem 'dotenv-rails', groups: [:development, :test]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
+# Use i18n for internationalization
+gem 'rails-i18n', '~> 6.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 5.3'
+# Use Devise token auth for authentication
+gem 'devise_token_auth'
+# Use rack-cors for local cors
+gem 'rack-cors'
+# Use phonelib for phone number validations and methods
+gem 'phonelib'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
