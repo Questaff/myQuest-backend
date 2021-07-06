@@ -13,9 +13,9 @@ This is the Ruby on Rails API backend of myQuest !
 This installation instructions assumes that you have already installed the prerecquisites above.
 
 
-1. Run `docker-compose build` to build the ruby image.
-2. Run `docker-compose run --rm web bundle install` to install dependencies.
-3. Download the environment variables file `.env` and follow the instructions from our discord server at  `MYQUEST-BACKEND -> #ressources -> Setup environment vars`.
+1. Download the environment variables file `.env` and follow the instructions from our discord server at  `MYQUEST-BACKEND -> #ressources -> Setup environment vars`.
+2. Run `docker-compose build` to build the ruby image.
+3. Run `docker-compose run --rm web bundle install` to install dependencies.
 4. Run `docker-compose run --rm web rake db:create db:migrate RAILS_ENV=development` to setup the database.
 5. Follow the instructions from our discord server at `MYQUEST-BACKEND -> #ressources -> Setup PgAdmin`.
 
