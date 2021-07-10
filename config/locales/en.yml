@@ -31,3 +31,26 @@
 
 en:
   hello: "Hello world"
+  validation:
+    user:
+      full-name:
+        format: "is not a valid fullname"
+      nickname: 
+        format: "can contain only letters, numbers and the following special characters: '-', '_'"
+      password:
+        format-uppercase: "must contain at least one capital letter"
+        format-lowercase: "must contain at least one lower case letter"
+        format-symbol: "must contain at least one special character"
+        format-number: "must contain at least one digit"
+  activerecord:
+    models:
+      user: "User"
+    attributes:
+      user:
+        name: "Full name"
+        nickname: "Nickname"
+        email: "Email address"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        phone_number: "Phone number"
+    
